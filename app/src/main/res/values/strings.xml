@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Meteorpedia</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="meteors_description_text">Meteors fallen on Earth after the year 1900</string>
+    <string name="meteor_name_sample">Meteor Name</string>
+    <string name="meteor_size_sample">Size</string>
+    <string name="fallen_date">Fallen date</string>
+    <string name="no_meteors_error_message">No meteors added yet to the list.</string>
+    <string name="something_went_wrong_message">Something went wrong. Please swipe to try to load the list again.</string>
+    <string name="logo">Logo</string>
 </resources>

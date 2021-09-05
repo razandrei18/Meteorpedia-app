@@ -5,6 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity"
-    android:background="#334D5C">
+    android:background="@color/colorPrimary"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:src="@drawable/meteor_icon"
+        app:layout_constraintBottom_toTopOf="@+id/app_name_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/logo" />
+
+    <TextView
+        android:id="@+id/app_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/colorOrange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_iv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
