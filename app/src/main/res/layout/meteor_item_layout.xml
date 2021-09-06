@@ -53,7 +53,7 @@
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:textColor="@color/colorWhite"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="12dp"/>
 
             <TextView
                 android:id="@+id/meteor_size_tv"
@@ -62,10 +62,10 @@
                 app:layout_constraintStart_toEndOf="@+id/meteor_iv"
                 app:layout_constraintTop_toBottomOf="@id/meteor_name_tv"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:text="@{meteorData.mass}"
+                android:text="@{`Mass: ` + meteorData.mass + `g`}"
                 android:textSize="16sp"
                 android:textColor="@color/colorWhite"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="12dp"/>
 
             <TextView
                 android:id="@+id/meteor_fallen_date_tv"
@@ -74,10 +74,10 @@
                 app:layout_constraintStart_toEndOf="@+id/meteor_iv"
                 app:layout_constraintTop_toBottomOf="@id/meteor_size_tv"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:text="@{meteorData.fallenYear}"
+                android:text="@{`Fallen year: ` + meteorData.fallenYear.substring(0,4)}"
                 android:textSize="16sp"
                 android:textColor="@color/colorWhite"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="12dp"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

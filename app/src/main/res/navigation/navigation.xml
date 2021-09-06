@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation.xml"
     app:startDestination="@id/meteorsListFragment">
 
     <fragment
         android:id="@+id/meteorsListFragment"
         android:name="com.example.meteorpedia.fragments.MeteorsListFragment"
-        android:label="MeteorsListFragment" />
+        android:label="MeteorsListFragment" >
+        <action
+            android:id="@+id/action_meteorsListFragment_to_meteorsMapFragment"
+            app:destination="@id/meteorsMapFragment"
+            app:enterAnim="@anim/pull_in_right"
+            app:exitAnim="@anim/push_out_left"
+            app:popEnterAnim="@anim/pull_in_left"
+            app:popExitAnim="@anim/push_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/meteorsMapFragment"
+        android:name="com.example.meteorpedia.fragments.MeteorsMapFragment"
+        android:label="fragment_meteors_map"
+        tools:layout="@layout/fragment_meteors_map" />
 </navigation>

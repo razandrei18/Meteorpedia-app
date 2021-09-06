@@ -19,6 +19,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/meteors_description_text"
+            android:textColor="@color/colorPrimary"
             android:textAlignment="center"
             android:textStyle="normal"
             android:textSize="20sp"
@@ -63,32 +64,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
-
-        <!--<androidx.cardview.widget.CardView
-            android:id="@+id/progress_bar_cardview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:contentPadding="8dp"
-            app:cardCornerRadius="40dp"
-            app:cardBackgroundColor="@color/colorWhite"
-            android:layout_marginBottom="30dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ProgressBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:indeterminateTint="@color/colorOrange" />
-
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>-->
-
 
         <include
             layout="@layout/widget_loading"

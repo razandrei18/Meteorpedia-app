@@ -33,17 +33,8 @@ class MeteorsAdapter(private val meteorsArray: ArrayList<MeteorModel>,
 }
 
 class MeteorsViewHolder(private val binding: ViewDataBinding) : RecyclerView.ViewHolder(binding.root) {
- //   private val filteredMeteors : ArrayList<MeteorModel> = arrayListOf()
+
     fun bind(meteorsArray: ArrayList<MeteorModel>, callback: MeteorsCallback, position: Int) {
-
-      /*  for(item in meteorsArray){
-            if(item.fallenYear != null && !item.mass.isNullOrEmpty()) {
-                if (item.fallenYear.startsWith("19") || item.fallenYear.startsWith("20")) {
-                    filteredMeteors.add(item)
-                }
-            }
-        }*/
-
         binding.setVariable(BR.meteorData, meteorsArray.sortedByDescending { it.mass!!.toFloat() }[position])
         binding.setVariable(BR.callback, callback)
         binding.executePendingBindings()

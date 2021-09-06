@@ -10,9 +10,10 @@
 
     <ImageView
         android:id="@+id/logo_iv"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:src="@drawable/meteor_icon"
+        android:paddingStart="50dp"
         app:layout_constraintBottom_toTopOf="@+id/app_name_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
